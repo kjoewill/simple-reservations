@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2017-10-10
+  glider: MyString
+  s0800: MyString
+  s0900: MyString
+  s1000: MyString
+  s1100: MyString
+  s1200: MyString
+  s1300: MyString
+
+two:
+  day: 2017-10-10
+  glider: MyString
+  s0800: MyString
+  s0900: MyString
+  s1000: MyString
+  s1100: MyString
+  s1200: MyString
+  s1300: MyString

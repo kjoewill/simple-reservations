@@ -1,0 +1,32 @@
+
+<h1>Glider Reservations</h1>
+<h2><%= @schedules.first.day.to_formatted_s(:long) %></h2>
+
+<table class= "schedules_table">
+  <tr>
+  	<th>Time</th>
+    <% @schedules.each_with_index do |sched, i| %>
+      <th><%=sched.glider%>  <%= link_to_edit_or_new(sched) %></th>
+    <% end %>
+  </tr>
+
+<% array_from_schedule(@schedules).transpose.each_with_index do |row, i| %>
+
+     <tr>
+       <td><%= time_for_index(i) %></td>
+       <% row.each do |cell| %>
+          <td><%= cell %></td>
+       <% end %>
+     </tr>
+
+<% end %>
+</table>
+
+<p>
+<%= form_tag(schedules_url, method: "get") do %>
+  <%= label_tag(:q, "Schedule for:") %>
+  <%= date_picker %>
+  <%= submit_tag("Change Date") %>
+<% end %>
+</p>
+

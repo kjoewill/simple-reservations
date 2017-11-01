@@ -1,0 +1,15 @@
+<h2>Editing Schedule: <%= @schedule.glider %></h2>
+
+<%= form_for(@schedule) do |f| %>
+  <%= render :partial => 'slots', locals: {f: f} %>
+
+  <p>
+    <%= f.hidden_field :day  %>
+    <%= f.hidden_field :glider %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+    <%= link_to "Cancel", schedule_url_for(@schedule) %>
+  </p>
+<% end %>
