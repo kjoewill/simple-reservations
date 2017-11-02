@@ -1,4 +1,5 @@
 <h2>Editing Schedule: <%= @schedule.glider %></h2>
+<h3><%= @schedule.day.strftime("%A, %B %d") %></h3>
 
 <%= form_for(@schedule) do |f| %>
   <%= render :partial => 'slots', locals: {f: f} %>
