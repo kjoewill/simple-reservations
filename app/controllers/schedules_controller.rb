@@ -6,7 +6,7 @@ class SchedulesController < ApplicationController
       date = Date.strptime(params[:q], '%Y-%m-%d')
       @schedules  = Schedule.schedule_for_day(date)
     else
-      @schedules = Schedule.schedule_for_day(Date.today)
+      @schedules = Schedule.schedule_for_day(Date.current)
     end
   end
 
