@@ -7,7 +7,7 @@
 
 class Schedule < ApplicationRecord
 
-  @@managed_gliders = ['N2689H (2-33)','N820SB (L-23)','N747S (1-26)','N7643 (1-34)', 'Tow Only']
+  @@managed_gliders = ['N2689H (2-33)','N820SB (L-23)','N747S (1-26)','N7643 (1-34)', 'Tow Only', 'Instructor']
   @@managed_time_slots = [
       :s0800, :s0830, :s0900, :s0930, :s1000, :s1030, :s1100, :s1130, :s1200,
       :s1230, :s1300, :s1330, :s1400, :s1430, :s1500, :s1530, :s1600, :s1630
