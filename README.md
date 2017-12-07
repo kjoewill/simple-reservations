@@ -37,7 +37,7 @@ Install prereq gems with:
 
 ```
 
-The tests are implemented with rspec. To run the test suite run "rspec" from the top directory
+The tests are implemented with rspec. To run the test suite run "rspec" from the top directory (simple-reservations)
 
     "rspec"
 
