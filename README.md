@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Install or (rvm use) ruby 2.3.3
 ```
 
 ### Installing
@@ -23,46 +23,35 @@ A step by step series of examples that tell you have to get a development env ru
 Say what the step will be
 
 ```
-Give the example
-```
+Install (or “use”) ruby 2.3.3
+Create new directory (ex.  test)
+Change to the new directory
+Clone origin repo with: 
+   “git clone https://github.com/kjoewill/simple-reservations.git”
+Change dir to that created from “clone” ... “simple-reservations”
+Install prereq gems with:
+   “bundle install --without production”
 
-And repeat
-
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+...
+The tests are implemented with rspec. To run the test suite run "rspec" from the top directory
+    "rspec"
+...
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+I am currently deploying this system to Heroku using standard git commands
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Ruby] 2.3.3
+* [Rails] 5.0.0
+* [bootstrap-datepicker-rail] For picking schedule dates
+* [Rspec] - for testing
+* [capybara] - for testing
+* All prereqs are listed in the gemfile
 
 ## Contributing
 
@@ -82,7 +71,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
