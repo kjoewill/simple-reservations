@@ -20,8 +20,6 @@ Install or (rvm use) ruby 2.3.3
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
 ```
 Install (or “use”) ruby 2.3.3
 Create new directory (ex.  test)
@@ -35,10 +33,15 @@ Install prereq gems with:
 ```
 
 ## Running the tests
-...
+
+
+```
+
 The tests are implemented with rspec. To run the test suite run "rspec" from the top directory
+
     "rspec"
-...
+
+```
 
 ## Deployment
 
